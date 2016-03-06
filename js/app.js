@@ -23,7 +23,6 @@
 $('.progress').on('inview', function(event, isInView) {
   if (isInView) {
     // element is now visible in the viewport
-    console.log("inview triggered");
     var value;
     var id = this.id;
     for(var skill in skills.skills) {
@@ -34,7 +33,6 @@ $('.progress').on('inview', function(event, isInView) {
     circles[id].animate(value);
 
   } else {
-  	console.log("outview");
     // element has gone out of viewport
   }
 });

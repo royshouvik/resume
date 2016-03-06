@@ -270,7 +270,9 @@ span {
     .welcome-message {
         display: none;
     }
-
+    .flex-box {
+        justify-content: flex-start;
+    }
     .project-entry {
         width: 60%;
         margin: 0 auto;
