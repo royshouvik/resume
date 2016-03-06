@@ -43,7 +43,9 @@ body {
 .project-entry {
     float: left;
     width: 23.33%;
-    min-width: 190px;
+    /*min-width: 190px;*/
+    padding-left: 5%;
+    padding-right: 0;
 }
 
 #education {
@@ -184,7 +186,7 @@ a {
 
 .progress-name {
   font-family: 'lane_-_narrowregular', "Times New Roman";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute; 
   left: 50%; 
   top: 70%; 
@@ -231,7 +233,7 @@ ul {
 }
 
 img {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 span {
@@ -267,6 +269,27 @@ span {
     }
     .welcome-message {
         display: none;
+    }
+
+    .project-entry {
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+        padding: 0;
+    }
+    .progress-name {
+        font-size: 1.2rem;
+    }
+
+    .progress p.progressbar-text {
+        font-size: 1.5rem;
+    }
+
+    .progress {
+        float: none;
+        width: 60%;
+        margin: 40px auto;
+        padding: 0;
     }
 }
 

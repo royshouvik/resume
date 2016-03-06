@@ -64,7 +64,7 @@ var skills = {
   {
     id : "android",
     value: 0.6,
-    text: "Android" 
+    text: "Android " 
   }],
 };
 
@@ -153,6 +153,13 @@ var work = {
     "employer": "A custom software development and business consulting firm",
     "title": "Senior Associate",
     "dates": "October 2014 - Present",
+    "location": "Gurgaon, India",
+    "description": "End to end quality assurance activities for BFSI clients. Implemented custom automation testing solution. Responsible for performance testing."
+  },
+  {
+    "employer": "An American multinational financial services corporation",
+    "title": "Test Analyst",
+    "dates": "October 2013 - October 2014",
     "location": "Gurgaon, India",
     "description": "End to end quality assurance activities for BFSI clients. Implemented custom automation testing solution. Responsible for performance testing."
   }]
