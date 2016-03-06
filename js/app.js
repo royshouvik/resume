@@ -20,12 +20,6 @@
    document.getElementById('mapDiv').style.display = 'none';
  }
 
-window.onload = function onLoad () {
-	
-};
-
-
-
 $('.progress').on('inview', function(event, isInView) {
   if (isInView) {
     // element is now visible in the viewport
