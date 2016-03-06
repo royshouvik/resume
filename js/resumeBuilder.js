@@ -1,7 +1,6 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-
 var bio = {
   "name": "Shouvik Roy",
   "role": "Web Developer",
@@ -16,6 +15,7 @@ var bio = {
   "skills": ["Web Development", "Python", "JavaScript", "Java", "C#"],
   "bioPic": "images/profile.jpeg"
 };
+
 var fontIcons = {
   "mobile": '<i class="fa fa-mobile fa-stack-1x"></i>',
   "email": '<i class="fa fa-envelope-o fa-stack-1x"></i>',
@@ -23,6 +23,7 @@ var fontIcons = {
   "twitter": '<i class="fa fa-twitter fa-stack-1x"></i>',
   "location": '<i class="fa fa-map-marker fa-stack-1x"></i>'
 };
+
 bio.display = function() {
   var formattedName = HTMLheaderName.replace("%data%", bio.name);
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -47,8 +48,6 @@ bio.display = function() {
     }
   }
 };
-
-bio.display();
 
 var skills = {
   "skills": [{
@@ -79,10 +78,10 @@ skills.display = function() {
   }
   $("#skillsprogress").append(clearFix);
 };
+
 skills.createCircles = function() {
   for(var skill in skills.skills) {
-  var id = "#" + skills.skills[skill].id;
-  
+  var id = "#" + skills.skills[skill].id;  
   var circle = new ProgressBar.Circle(id,{
       text : {
         value : 0
@@ -99,8 +98,7 @@ skills.createCircles = function() {
   circles[skills.skills[skill].id] = circle;
   }
 };
-skills.display();
-skills.createCircles();
+
 var education = {
   "schools": [{
     "name": "Lovely Professional University",
@@ -146,8 +144,6 @@ education.display = function() {
   }
 };
 
-education.display();
-
 var work = {
   "jobs": [{
     "employer": "A custom software development and business consulting firm",
@@ -184,9 +180,7 @@ var projects = {
   }]
 };
 
-
-
-var displayWork = function() {
+work.display = function() {
   for (var job in work.jobs) {
     $("#workExperience").append(HTMLworkStart);
     var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -205,9 +199,6 @@ var displayWork = function() {
     $(".work-entry:last").append(formattedWorkDescription);
   }
 };
-
-
-displayWork();
 
 projects.display = function() {
   for (var project in projects.projects) {
@@ -231,6 +222,11 @@ projects.display = function() {
   $("#projects").append(clearFix);
 };
 
+bio.display();
+skills.display();
+skills.createCircles();
+education.display();
+work.display();
 projects.display();
 
 $("#mapDiv").append(googleMap);
