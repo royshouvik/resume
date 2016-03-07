@@ -16,7 +16,7 @@ h6 {
 
 h1,
 h2 {
-    font-family: 'lane_-_narrowregular', "Times New Roman";
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -182,16 +182,16 @@ a {
 }
 
 .progress p.progressbar-text {
-  font-family: 'lane_-_narrowregular', "Times New Roman";
-  font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;  
+    font-size: 2.5rem;
 }
 
 
 .progress-name {
-  font-family: 'lane_-_narrowregular', "Times New Roman";
+  font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
   position: absolute; 
-  left: 50%; 
+  left: 49%; 
   top: 70%; 
   padding: 0; 
   margin: 0; 
@@ -308,7 +308,7 @@ span {
 }
 
 #mapDiv {
-    overflow: scroll;
+    overflow: hidden;
     height: 400px;
     width: 100%;
     padding-bottom: 8%;
