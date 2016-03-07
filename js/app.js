@@ -34,5 +34,6 @@ $('.progress').on('inview', function(event, isInView) {
 
   } else {
     // element has gone out of viewport
+    circles[this.id].animate(0);
   }
 });
