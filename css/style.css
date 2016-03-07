@@ -299,6 +299,10 @@ span {
     .work-entry p {
         width: 100%;
     }
+
+    #header > span {
+        display: block;
+    }
 }
 
 #map {
